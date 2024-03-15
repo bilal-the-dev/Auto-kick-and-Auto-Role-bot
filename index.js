@@ -29,7 +29,7 @@ client.once(Events.ClientReady, async (readyClient) => {
 		try {
 			console.log("Running every mid-night");
 			if (kick && role)
-				return console.log("Either Kick or Role should be true in config");
+				return console.log("Either Kick or Role should be true in the config");
 			const guild = readyClient.guilds.cache.get(GUILD_ID);
 			const members = await guild.members.fetch();
 
